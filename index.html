@@ -1,0 +1,98 @@
+<!--
+    Bubble level inspired by John Mothershed on CodePen,
+    http://codepen.io/wiseguy12851/pen/mJZNqN
+
+    who also credited Jamie Dixon with this pen
+    http://codepen.io/JamieDixon/pen/Pqrjvv
+
+
+    Slider Styles inspired bySimon Goellner
+    http://codepen.io/simeydotme/pen/mJLPPq
+-->
+
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Pomodoro Clock</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+  <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css">
+  <link rel="stylesheet" href="http://simeydotme.github.io/jQuery-ui-Slider-Pips/dist/css/jqueryui.min.css">
+  <link rel="stylesheet" href="http://simeydotme.github.io/jQuery-ui-Slider-Pips/dist/css/jquery-ui-slider-pips.min.css">
+  <link rel="stylesheet" href="http://simeydotme.github.io/jQuery-ui-Slider-Pips/dist/css/app.min.css">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+
+<!--  Place reset button in top right corner  -->
+  <button id="reset" class="btn btn-danger pull-right">Reset</button>
+
+
+  <div class="container text-center">
+
+    <div class="row">
+      <div class="title">
+        Pomodoro Clock
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4" style="font-size: 20pt; font-family: 'Maven Pro', sans-serif;">
+        Break Length
+      </div>
+<!--    Current Break Time    -->
+      <div id="breakTime" class="col-md-4 col-md-offset-4" style="font-size: 12pt; font-family: 'Maven Pro', sans-serif;"></div>
+    </div>
+
+    <div class="row"></div>
+
+    <div class="row">
+<!--    Slider to select break duration    -->
+      <div id="flat-slider"></div>
+    </div>
+<!-- Display bubble level -->
+    <div class="row">
+      <div class="wrapper">
+        <div class="green">
+          <div class="progress">
+            <div class="inner">
+              <a id="pause">
+                <div class="percent"><span></span></div>
+                <div id="countDown"></div>
+                <div class="water"></div>
+                <div class="glare"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row"></div>
+
+    <div class="row">
+<!--    Slider to select session duration    -->
+      <div id="flat-slider-session"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4" style="font-size: 20pt; font-family: 'Maven Pro', sans-serif;">
+        Session Length
+      </div>
+<!--    Current Break Time    -->
+      <div id="sessionTime" class="col-md-4 col-md-offset-4" style="font-size: 12pt; font-family: 'Maven Pro', sans-serif;"></div>
+    </div>
+
+  </div>
+
+  <script src="./js/jquery-3.1.1.min.js" charset="utf-8"></script>
+  <script src="./js/jquery-plus-ui.min.js" charset="utf-8"></script>
+  <script src="./js/jquery-ui-slider-pips.js" charset="utf-8"></script>
+  <script src="./js/enquire.js" charset="utf-8"></script>
+  <script src="./js/index.js" charset="utf-8"></script>
+</body>
+
+</html>
